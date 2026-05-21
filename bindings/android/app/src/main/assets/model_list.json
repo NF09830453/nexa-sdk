@@ -168,5 +168,5 @@
     "versionCode": 1,
     "pluginIds": 17,
     "modelUrl": "https://huggingface.co/Jackrong/Negentropy-claude-opus-4.7-9B-GGUF/resolve/main/Negentropy-claude-opus-4.7-9B-Q3_K_M.gguf"
-  },
+  }
 ]
