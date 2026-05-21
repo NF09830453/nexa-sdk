@@ -580,7 +580,7 @@ Note: You must use the campaign_investigation function whenever a customer asks 
                 "chat", "llm" -> {
 
                     val conf = ModelConfig(
-                        nCtx = 1024,
+                        nCtx = 8192,
                         nGpuLayers = nGpuLayers,
                         enable_thinking = enableThinking,
                         npu_lib_folder_path = applicationInfo.nativeLibraryDir,
@@ -599,6 +599,14 @@ Note: You must use the campaign_investigation function whenever a customer asks 
                     ).build().onSuccess { wrapper ->
                         isLoadLlmModel = true
                         llmWrapper = wrapper
+			val intent = Intent(this@MainActivity, ApiService::class.java).apply {
+				putExtra(ApiService.EXTRA_MODEL_PATH, selectModelData.modelFile(this@MainActivity)!!.absolutePath) // their path variable
+				putExtra(ApiService.EXTRA_DEVICE, "npu")
+				putExtra(ApiService.EXTRA_CTX_LENGTH, 8192)
+			}
+			startForegroundService(intent)
+
+
                         onLoadModelSuccess("llm model loaded")
                     }.onFailure { error ->
                         onLoadModelFailed(error.message.toString())
