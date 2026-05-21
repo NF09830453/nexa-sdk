@@ -134,36 +134,36 @@
     "modelUrl": "https://huggingface.co/NexaAI/LFM2-24B-A2B-Preview-GGUF/resolve/main/LFM2-24B-A2B-Preview-Q4_0.gguf"
   },
   {
-    "id": "egentropy-claude-opus-4.7-4B-Q5_K_S.gguf",
-    "displayName": "egentropy-claude-opus-4.7-4B-Q5_K_S.gguf",
-    "modelName": "egentropy-claude-opus-4.7-4B-Q5_K_S.gguf",
+    "id": "egentropy-claude-opus-4.7-4B-Q5_K_S",
+    "displayName": "egentropy-claude-opus-4.7-4B-Q5_K_S",
+    "modelName": "egentropy-claude-opus-4.7-4B-Q5_K_S",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
     "modelUrl": "https://huggingface.co/Jackrong/Negentropy-claude-opus-4.7-4B-GGUF/resolve/main/Negentropy-claude-opus-4.7-4B-Q5_K_S.gguf"
   },
   {
-    "id": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf",
-    "displayName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf",
-    "modelName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf",
+    "id": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
+    "displayName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
+    "modelName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
     "modelUrl": "https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF/resolve/main/gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf"
   },
   {
-    "id": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K.gguf",
-    "displayName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K.gguf",
-    "modelName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K.gguf",
+    "id": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
+    "displayName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
+    "modelName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
     "modelUrl": "https://huggingface.co/llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic-GGUF/resolve/main/gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K.gguf"
   },
   {
-    "id": "Negentropy-claude-opus-4.7-9B-Q3_K_M.gguf",
-    "displayName": "Negentropy-claude-opus-4.7-9B-Q3_K_M.gguf",
-    "modelName": "Negentropy-claude-opus-4.7-9B-Q3_K_M.gguf",
+    "id": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
+    "displayName": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
+    "modelName": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
