@@ -1,4 +1,5 @@
 package com.nexa.demo
+import com.nexa.demo.GenerationConfigSample
 
 import android.app.Notification
 import android.app.NotificationChannel
