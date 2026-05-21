@@ -121,21 +121,30 @@ class ApiService : Service() {
 
                     wrapper.applyChatTemplate(chatMessages, null, false)
                         .onSuccess { template ->
-                            val sb = StringBuilder()
-                            wrapper.generateStreamFlow(
-                                template.formattedText,
-                                com.nexa.demo.GenerationConfigSample().toGenerationConfig(null)
-                            ).collect { result ->
-                                when (result) {
-                                    is LlmStreamResult.Token     -> sb.append(result.text)
-                                    is LlmStreamResult.Completed -> { /* done */ }
-                                    is LlmStreamResult.Error     ->
-                                        sb.append("[error]")
-                                }
+                            call.response.header("Content-Type", "text/event-stream")
+                            call.response.header("Cache-Control", "no-cache")
+                            call.respondTextWriter {
+                                wrapper.generateStreamFlow(template.formattedText, genConfig)
+                                    .collect { result ->
+                                        when (result) {
+                                            is LlmStreamResult.Token -> {
+                                                // OpenAI SSE format
+                                                write("data: {\"choices\":[{\"delta\":{\"content\":\"${
+                                                    result.text
+                                                        .replace("\\", "\\\\")
+                                                        .replace("\"", "\\\"")
+                                                        .replace("\n", "\\n")
+                                                }\"}}]}\n\n")
+                                                flush()
+                                            }
+                                            is LlmStreamResult.Completed -> {
+                                                write("data: [DONE]\n\n")
+                                                flush()
+                                            }
+                                            else -> {}
+                                        }
+                                    }
                             }
-                            call.respond(ApiChatResponse(
-                                listOf(ApiChatChoice(0, ApiChatMsg("assistant", sb.toString())))
-                            ))
                         }
                         .onFailure { err ->
                             call.respond(
