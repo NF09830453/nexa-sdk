@@ -136,7 +136,7 @@
   {
     "id": "egentropy-claude-opus-4.7-4B-Q5_K_S",
     "displayName": "egentropy-claude-opus-4.7-4B-Q5_K_S",
-    "modelName": "egentropy-claude-opus-4.7-4B-Q5_K_S",
+    "modelName": "egentropy-claude-opus-4.7-4B-Q5_K_S.gguf",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
@@ -145,7 +145,7 @@
   {
     "id": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
     "displayName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
-    "modelName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M",
+    "modelName": "gemma-4-E4B-it-ultra-uncensored-heretic-Q4_K_M.gguf",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
@@ -154,7 +154,7 @@
   {
     "id": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
     "displayName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
-    "modelName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K",
+    "modelName": "gemma-4-E2B-it-ultra-uncensored-heretic-Q6_K.gguf",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
@@ -163,7 +163,7 @@
   {
     "id": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
     "displayName": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
-    "modelName": "Negentropy-claude-opus-4.7-9B-Q3_K_M",
+    "modelName": "Negentropy-claude-opus-4.7-9B-Q3_K_M.gguf",
     "type": "chat",
     "versionCode": 1,
     "pluginIds": 17,
