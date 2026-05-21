@@ -125,7 +125,7 @@ class ApiService : Service() {
                             call.response.header("Content-Type", "text/event-stream")
                             call.response.header("Cache-Control", "no-cache")
                             call.respondTextWriter {
-                                wrapper.generateStreamFlow(template.formattedText, genConfig)
+                                wrapper.generateStreamFlow(template.formattedText, GenerationConfigSample().toGenerationConfig(null))
                                     .collect { result ->
                                         when (result) {
                                             is LlmStreamResult.Token -> {
