@@ -1,4 +1,4 @@
-package ai.nexa.demo
+package com.nexa.demo
 
 import ai.nexa.core.*
 import android.app.*
